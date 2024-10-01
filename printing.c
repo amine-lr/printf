@@ -6,11 +6,11 @@
 /*   By: mlarioui <mlarioui@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/09/27 13:15:01 by mlarioui          #+#    #+#             */
-/*   Updated: 2024/09/27 14:49:24 by mlarioui         ###   ########.fr       */
+/*   Updated: 2024/10/01 14:42:28 by mlarioui         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-#include "ft_printf.h"
+#include "libftprintf.h"
 
 int	putchar(char c)
 {
@@ -65,7 +65,7 @@ int	putnbr_pos(unsigned int n, int count)
 		count = putnbr_pos(n % 10, count);
 	}
 	else
-		count += putnbr_pos(n + '0');
+		count += putchar(n + '0');
 	return (count);
 }
 /*

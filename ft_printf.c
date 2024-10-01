@@ -1,19 +1,36 @@
 /* ************************************************************************** */
 /*                                                                            */
 /*                                                        :::      ::::::::   */
-/*   ft_printf.h                                        :+:      :+:    :+:   */
+/*   ft_printf.c                                        :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
 /*   By: mlarioui <mlarioui@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
-/*   Created: 2024/09/27 12:29:06 by mlarioui          #+#    #+#             */
-/*   Updated: 2024/09/27 14:20:01 by mlarioui         ###   ########.fr       */
+/*   Created: 2024/10/01 15:27:05 by mlarioui          #+#    #+#             */
+/*   Updated: 2024/10/01 15:50:19 by mlarioui         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-#ifndef FT_PRINTF_H
-# define FT_PRINTF_H
-# include <stdarg.h>
-# include <unistd.h>
-# include <stdlib.h>
+#include "libftprintf.h"
 
-#endif
+int	ft_printf(const char *str, ...)
+{
+	va_list	list;
+	int		count;
+	int		i;
+
+	va_start(args, str);
+	i = 0;
+	while (str[i])
+	{
+		if (str[i] == '%' && str[i +1])
+		{
+			i++;
+			count += ft_format(args, str[i]);
+		}
+		else
+			count += putchar(str[i]);
+		i++;
+		va_end(args);
+		return (count);
+	}
+}
