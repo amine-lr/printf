@@ -6,26 +6,26 @@
 #    By: mlarioui <mlarioui@student.42.fr>          +#+  +:+       +#+         #
 #                                                 +#+#+#+#+#+   +#+            #
 #    Created: 2024/10/01 15:54:02 by mlarioui          #+#    #+#              #
-#    Updated: 2024/10/01 16:10:55 by mlarioui         ###   ########.fr        #
+#    Updated: 2024/10/04 21:50:25 by mlarioui         ###   ########.fr        #
 #                                                                              #
 # **************************************************************************** #
 
+NAME = libftprintf.a
 
-Name = libftprintf.a
-
-SRC = printing.c format.c ft_printf.c puthexnbr.c
+SRC = printing.c ft_printf.c puthexnbr.c
 
 OBJS = $(SRC:.c=.o)
 
 CC = gcc
-CFLAGS = -Wall -Wextra -Wextra
+CFLAGS = -Wall -Wextra -Werror  
 
 AR = ar rcs
 INCLUDE = libftprintf.h
 
 all: $(NAME)
-	$(NAME): $(OBJS)
-		$(AR) $(NAME) $(OBJS)
+
+$(NAME): $(OBJS)
+	$(AR) $(NAME) $(OBJS)  
 
 %.o: %.c
 	$(CC) $(CFLAGS) -c $< -o $@
