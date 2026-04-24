@@ -101,4 +101,4 @@ This approach prioritizes clarity and correctness over complexity. Each conversi
 
 ## AI Usage
 
-AI was used acoording to 42 normes and rules, in this project, it was use to generate some exemles of variadic functions for a deeoer understanding.
+For this project, AI was used in compliance with the 42 norms and rules to generate examples of variadic functions, facilitating a deeper understanding of the concept.
