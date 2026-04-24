@@ -16,8 +16,8 @@ SRC = printing.c ft_printf.c puthexnbr.c
 
 OBJS = $(SRC:.c=.o)
 
-CC = gcc
-CFLAGS = -Wall -Wextra -Werror  
+CC = cc
+CFLAGS = -Wall -Wextra -Werror
 
 AR = ar rcs
 INCLUDE = libftprintf.h
@@ -25,7 +25,7 @@ INCLUDE = libftprintf.h
 all: $(NAME)
 
 $(NAME): $(OBJS)
-	$(AR) $(NAME) $(OBJS)  
+	$(AR) $(NAME) $(OBJS)
 
 %.o: %.c
 	$(CC) $(CFLAGS) -c $< -o $@
@@ -33,7 +33,7 @@ $(NAME): $(OBJS)
 clean:
 	rm -f $(OBJS)
 
-fclean: clean 
+fclean: clean
 	rm -f $(NAME)
 
 re: fclean all
