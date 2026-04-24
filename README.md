@@ -1,6 +1,6 @@
 # README
 
-*This project has been created as part of the 42 curriculum by amine-lr.*
+*This project has been created as part of the 42 curriculum by molariou.*
 
 ## Description
 
@@ -101,4 +101,4 @@ This approach prioritizes clarity and correctness over complexity. Each conversi
 
 ## AI Usage
 
-No AI tools were used in the development of this project. The implementation was created through direct problem-solving and manual coding practices.
+AI was used acoording to 42 normes and rules, in this project, it was use to generate some exemles of variadic functions for a deeoer understanding.
