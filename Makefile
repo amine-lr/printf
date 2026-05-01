@@ -20,7 +20,7 @@ CC = cc
 CFLAGS = -Wall -Wextra -Werror
 
 AR = ar rcs
-INCLUDE = libftprintf.h
+INCLUDE = ft_printf.h
 
 all: $(NAME)
 
