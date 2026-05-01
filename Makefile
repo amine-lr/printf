@@ -3,10 +3,10 @@
 #                                                         :::      ::::::::    #
 #    Makefile                                           :+:      :+:    :+:    #
 #                                                     +:+ +:+         +:+      #
-#    By: mlarioui <mlarioui@student.42.fr>          +#+  +:+       +#+         #
+#    By: molariou <molariou@student.42.fr>          +#+  +:+       +#+         #
 #                                                 +#+#+#+#+#+   +#+            #
-#    Created: 2024/10/01 15:54:02 by mlarioui          #+#    #+#              #
-#    Updated: 2024/10/04 21:50:25 by mlarioui         ###   ########.fr        #
+#    Created: 2026/05/01 16:20:17 by molariou          #+#    #+#              #
+#    Updated: 2026/05/01 16:20:18 by molariou         ###   ########.fr        #
 #                                                                              #
 # **************************************************************************** #
 

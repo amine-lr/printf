@@ -1,17 +1,18 @@
 /* ************************************************************************** */
 /*                                                                            */
 /*                                                        :::      ::::::::   */
-/*   libftprintf.h                                      :+:      :+:    :+:   */
+/*   ft_printf.h                                        :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
-/*   By: mlarioui <mlarioui@student.42.fr>          +#+  +:+       +#+        */
+/*   By: molariou <molariou@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
-/*   Created: 2024/09/27 12:29:06 by mlarioui          #+#    #+#             */
-/*   Updated: 2024/10/05 16:57:06 by mlarioui         ###   ########.fr       */
+/*   Created: 2026/05/01 16:28:05 by molariou          #+#    #+#             */
+/*   Updated: 2026/05/01 16:29:02 by molariou         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-#ifndef LIBFTPRINTF_H
-# define LIBFTPRINTF_H
+#ifndef FT_PRINTF_H
+# define FT_PRINTF_H
+
 # include <stdarg.h>
 # include <unistd.h>
 # include <stdlib.h>
