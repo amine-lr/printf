@@ -102,4 +102,4 @@ This approach prioritizes clarity and correctness over complexity. Each conversi
 ## AI Usage
 
 For this project, AI was used in compliance with the 42 norms and rules to generate examples of variadic functions, facilitating a deeper understanding of the concept.
-It was also used to help generate the aestetic of the main.c(a custemized tester), it's available on my github: amine-lr but it wasn't pushed with the main programme into the intra network.
+It was also used to help generate the aesthetic of the main.c(a custemized tester), it's available on my github: amine-lr but it wasn't pushed with the main programme into the intra network.
