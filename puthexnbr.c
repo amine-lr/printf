@@ -18,7 +18,7 @@ int	puthexnbr(size_t arg, int count, char n_type)
 	{
 		count = puthexnbr(arg / 16, count, n_type);
 	}
-	if ((n_type == 'x'))
+	if (n_type == 'x')
 		count += ft_putchar("0123456789abcdef"[arg % 16]);
 	if (n_type == 'X')
 		count += ft_putchar("0123456789ABCDEF"[arg % 16]);
